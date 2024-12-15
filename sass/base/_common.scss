@@ -3,6 +3,9 @@ body {
     color: var(--primary-text-color);
     background-color: #ffffff;
   }
+
+
+
   .link {
     text-decoration: none;
   }
@@ -17,4 +20,11 @@ body {
     font-weight: 700;
     letter-spacing: 1.08px;
     line-height: 1.17;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
   }
