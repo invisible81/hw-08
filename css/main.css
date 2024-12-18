@@ -652,19 +652,20 @@ img {
 }
 
 .social-media__subheader {
+  text-align: center;
   margin-bottom: 20px;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: 1px;
-  text-align: left;
   text-transform: uppercase;
 }
 
 .social-media__list {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .social-media__item:not(:last-child) {
@@ -686,8 +687,6 @@ img {
 
 .subscribe {
   margin: 12px 0px 0 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .subscribe__form {
@@ -720,6 +719,7 @@ img {
 }
 
 .subscribe__btn {
+  position: relative;
   width: 200px;
   height: 50px;
   margin-top: 12px;
@@ -739,15 +739,14 @@ img {
 }
 
 .subscribe__tel-logo {
-  position: relative;
   margin-top: 36px;
-  width: 200px;
+  text-align: center;
 }
 
 .subscribe__btn::after {
   content: "";
   position: absolute;
-  top: 34%;
+  top: 22px;
   right: 28px;
   transform: translateY(-50%);
   width: 24px;
@@ -1057,10 +1056,13 @@ img {
   background-color: #2f303a;
 }
 
+.footer__logo {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
 .footer__contact-info {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .footer__address {
@@ -1069,7 +1071,7 @@ img {
   margin-bottom: 9px;
 }
 .footer__address:last-child {
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .footer__item:not(:last-child) {

@@ -1,8 +1,8 @@
 .subscribe {
   margin: 12px 0px 0 0;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
+
 
 .subscribe__form {
   display: flex;
@@ -37,6 +37,8 @@
 
 
 .subscribe__btn {
+  position: relative;
+
   width: 200px;
   height: 50px;
   margin-top: 12px;
@@ -50,6 +52,7 @@
   line-height: 1.9;
   letter-spacing: 1px;
   text-align: left;
+  
   &:hover,
   &:focus {
     cursor: pointer;
@@ -58,15 +61,16 @@
 }
 
 
+
 .subscribe__tel-logo {
-  position: relative;
   margin-top: 36px;
-  width: 200px;
+  // width: 200px;
+  text-align: center;
 }
 .subscribe__btn::after {
   content: "";
   position: absolute;
-  top: 34%;
+  top: 22px;
   right: 28px;
   transform: translateY(-50%);
   width: 24px;
