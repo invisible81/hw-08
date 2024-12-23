@@ -3,6 +3,10 @@
 }
 .studio {
   padding: 60px 0 60px 0;
+  
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 47px 0;
+  }
 }
 .studio__list  {
   @media screen and (min-width: 768px) {
@@ -26,7 +30,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 2 * 30px) / 1);
+    flex-basis: calc((100% - 4 * 30px) / 1);
     margin: 15px;
   }
   // display: block;

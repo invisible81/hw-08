@@ -1,5 +1,11 @@
 .social-media {
   margin:12px 0px 0 0;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 15px;
+    margin-right: 93px;
+  
+}
 }
 
 .social-media__subheader {
@@ -12,6 +18,10 @@
   letter-spacing: 1px;
   // text-align: left;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+}
 }
 .social-media__list {
   display: flex;

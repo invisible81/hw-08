@@ -659,6 +659,12 @@ img {
 .social-media {
   margin: 12px 0px 0 0;
 }
+@media screen and (min-width: 1200px) {
+  .social-media {
+    margin-top: 15px;
+    margin-right: 93px;
+  }
+}
 
 .social-media__subheader {
   text-align: center;
@@ -669,6 +675,11 @@ img {
   line-height: 0.9;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .social-media__subheader {
+    text-align: left;
+  }
 }
 
 .social-media__list {
@@ -695,7 +706,14 @@ img {
 }
 
 .subscribe {
+  display: none;
   margin: 12px 0px 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: block;
+    margin-right: 12px;
+  }
 }
 
 .subscribe__form {
@@ -731,7 +749,6 @@ img {
   position: relative;
   width: 200px;
   height: 50px;
-  margin-top: 12px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: var(--accent-color);
@@ -746,10 +763,22 @@ img {
 .subscribe__btn:hover, .subscribe__btn:focus {
   cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    display: block;
+  }
+}
 
 .subscribe__tel-logo {
-  margin-top: 36px;
+  display: none;
+  margin-top: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__tel-logo {
+    display: block;
+    margin-top: 48px;
+  }
 }
 
 .subscribe__btn::after {
@@ -763,6 +792,15 @@ img {
   background-image: url(../icons/telegram.icon.svg);
   background-size: contain;
   background-origin: border-box;
+}
+
+.visible-tablet {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .visible-tablet {
+    display: block;
+  }
 }
 
 .header {
@@ -933,6 +971,11 @@ img {
   text-transform: uppercase;
   /*  background-color: #949393;   времено установил фон для визуализации потом удалю */
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 36px;
+  }
+}
 
 .hero__button {
   padding: 10px 32px;
@@ -955,6 +998,11 @@ img {
 
 .studio {
   padding: 60px 0 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .studio {
+    padding: 94px 0 47px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -980,7 +1028,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .studio__item {
-    flex-basis: calc((100% - 60px) / 1);
+    flex-basis: calc((100% - 120px) / 1);
     margin: 15px;
   }
 }
@@ -1020,7 +1068,13 @@ img {
 }
 
 .work {
+  display: none;
   padding: 47px 0 94px 0;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .work__title {
@@ -1071,6 +1125,26 @@ img {
   margin-top: 0;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -15px;
+  }
+}
 
 .team__item {
   border-radius: 0px 0px 4px 4px;
@@ -1078,10 +1152,32 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background: rgb(255, 255, 255);
 }
+@media screen and (max-width: 768px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    margin: 15px;
+    flex-basis: calc((100% - 120px) / 1);
+  }
+}
 
 .team__bottom {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__bottom {
+    padding-bottom: 24px;
+  }
 }
 
 .team__subtitle {
@@ -1116,12 +1212,21 @@ img {
   flex-wrap: wrap;
   margin: -15px;
 }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+  }
+}
 
 .client__item {
   margin: 15px;
   flex-basis: calc((100% - 60px) / 2);
 }
-
+@media screen and (min-width: 768px) {
+  .client__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
 .client__link {
   display: flex;
   justify-content: center;
@@ -1150,9 +1255,32 @@ img {
   text-align: center;
   margin: 0 0 20px 0;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .footer__contact-info {
   text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer__contact-info {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contact-info {
+    margin-right: 70px;
+    text-align: left;
+  }
 }
 
 .footer__address {

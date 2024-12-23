@@ -7,17 +7,37 @@
 .footer__logo {
   text-align: center;
   margin: 0 0 20px 0;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+}
 }
 
 
 .footer__wrapper {
-  // display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+ 
 }
 
 .footer__contact-info {
    text-align: center;
+
   // margin-right: 70px;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-right: 165px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    text-align: left;
 }
+}
+
 
 .footer__address {
 

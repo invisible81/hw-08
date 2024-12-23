@@ -13,6 +13,12 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: -15px;
+
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+       
+    }
+
     
 }
 
@@ -20,6 +26,17 @@
     margin: 15px;
     
     flex-basis: calc((100% - 2 * 30px) / 2);
+
+    @media screen and (min-width: 768px){
+
+        flex-basis: calc((100% - 3 * 30px) / 3);        
+        
+      }
+
+    @media screen and (min-width: 1200px){
+        
+       
+      }
 
 
 }

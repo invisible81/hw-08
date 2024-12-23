@@ -1,5 +1,12 @@
 .subscribe {
+  display: none;
   margin: 12px 0px 0 0;
+
+  @media screen and (min-width: 1200px ) {
+    display: block;
+    margin-right: 12px;
+
+  }
   
 }
 
@@ -37,11 +44,12 @@
 
 
 .subscribe__btn {
+  
   position: relative;
 
   width: 200px;
   height: 50px;
-  margin-top: 12px;
+  // margin-top: 12px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: var(--accent-color);
@@ -58,14 +66,26 @@
     cursor: pointer;
   }
  
+  @media screen and (min-width: 1200px ) {
+    display: block;
+  }
 }
 
 
 
-.subscribe__tel-logo {
-  margin-top: 36px;
+.subscribe__tel-logo  {
+  display: none;
+  margin-top: 20px;
+
+  // margin-top: 36px;
   // width: 200px;
   text-align: center;
+
+  @media screen and (min-width: 1200px ) {
+    display: block;
+    margin-top: 48px;
+  }
+
 }
 .subscribe__btn::after {
   content: "";
@@ -76,11 +96,19 @@
   width: 24px;
   height: 24px;
   
-  
  
   background-image:url(../icons/telegram.icon.svg);
   background-size: contain;
   background-origin: border-box;
+
+
+}
+
+.visible-tablet {
+  display: none;
+  @media screen and  (max-width: 1200px) {
+    display: block;
+  }
 }
 
 

@@ -1,6 +1,13 @@
 .work {
-    padding: 47px 0 94px 0;
+  display: none;
+  padding: 47px 0 94px 0;
+    
+  @media screen and (min-width: 1200px) {
+        display: block;
+    }
+   
   }
+
   .work__title {
     margin-top: 0;
     margin-bottom: 50px;
