@@ -1,6 +1,8 @@
 .portfolio-nav {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+  
+    
     margin-bottom: 34px;
     &__button:hover,
     &__button:focus {
@@ -10,11 +12,27 @@
         0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
         background: rgb(33, 150, 243);
   }
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__item:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+  }
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
   }
   .portfolio-nav__item:not(:last-child) {
     margin-right: 8px;
   }
   
+
+
+  .portfolio-nav__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
   .portfolio-nav__button {
     padding: 6px 22px;
   
