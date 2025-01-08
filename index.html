@@ -180,9 +180,12 @@
           <ul class="work__list list">
             <li class="work__item">
               <img
-                src="./images/main/img1.jpg"
-                width="370"
+
+              srcset="./images/main/work1.jpg 1x, ./images/main/work1@2.jpg 2x, ./images/main/work1@3.jpg 3x"
+
+                src="./images/main/work1.jpg"
                 alt="пишет код на планшете используя клавиатуру"
+                width="370"
               />
               <div class="work__descr-block">
                 <p class="work__descr">Десктопные приложения</p>
@@ -190,9 +193,12 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/main/img2.jpg"
-                width="370"
+                
+                srcset="./images/main/work2.jpg 1x, ./images/main/work2@2.jpg 2x, ./images/main/work2@3.jpg 3x"
+
+                src="./images/main/work2.jpg"
                 alt="создает мобильное приложение на ноутбуке>"
+                width="370"
               />
               <div class="work__descr-block ">
                 <p class="work__descr"> Мобильные приложения</p>
@@ -200,9 +206,12 @@
             </li>
             <li class="work__item">
               <img
-                src="./images/main/img3.jpg"
-                width="370"
+
+                srcset="./images/main/work3.jpg 1x, ./images/main/work3@2.jpg 2x, ./images/main/work3@3.jpg 3x"
+
+                src="./images/main/work3.jpg"
                 alt="палитра цветов на планшете"
+                width="370"
               />
               <div class="work__descr-block ">
                 <p class="work__descr">Дизайнерские решения</p>
@@ -217,12 +226,22 @@
           <ul class="team__list list">
            
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/main/igor.jpg"
-                
-                alt="Игорь Демьяненко"
-              />
+           <picture>
+            
+            <source srcset="./images/main/igor450.jpg" media="(max-width: 767px)"/>
+           
+            <source srcset="./images/main/igor270.jpg" media="(min-width: 1200px)"/>
+
+            <source srcset="./images/main/igor354.jpg" media="(min-width: 768px)"/>
+
+
+            <img
+            class="team__img"
+            src="./images/main/igor270.jpg"
+            
+            alt="Игорь Демьяненко"
+          />
+           </picture>
               <div class="team__bottom">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
               <p class="team__descr">Product Designer</p>
@@ -261,12 +280,21 @@
             </li>
 
             <li class="team__item">
+
+           <picture>
+            <source srcset="./images/main/olga450.jpg" media="(max-width: 767px)"/>
+           
+            <source srcset="./images/main/olga270.jpg" media="(min-width: 1200px)"/>
+
+            <source srcset="./images/main/olga354.jpg" media="(min-width: 768px)"/>
+
               <img
                 class="team__img"
-                src="./images/main/olga.jpg"
+                src="./images/main/olga270.jpg"
                
                 alt="Ольга Репина"
               />
+           </picture>
               <div class="team__bottom">
                 <h3 class="team__subtitle">Ольга Репина</h3>
               <p class="team__descr">Frontend Developer</p>
@@ -305,12 +333,21 @@
             </li>
 
             <li class="team__item">
+
+            <picture>
+            <source srcset="./images/main/nikolai450.jpg" media="(max-width: 767px)"/>
+           
+            <source srcset="./images/main/nikolai270.jpg" media="(min-width: 1200px)"/>
+
+            <source srcset="./images/main/nikolai354.jpg" media="(min-width: 768px)"/>
+
               <img
                 class="team__img"
-                src="./images/main/nikolai.jpg"
+                src="./images/main/nikolai270.jpg"
                 
                 alt="Николай Тарасов"
               />
+            </picture>
               <div class="team__bottom">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
               <p class="team__descr">Marketing</p>
@@ -348,12 +385,20 @@
             </li>
 
             <li class="team__item">
+            <picture>
+            <source srcset="./images/main/mikhail450.jpg" media="(max-width: 767px)"/>
+           
+            <source srcset="./images/main/mikhail270.jpg" media="(min-width: 1200px)"/>
+
+            <source srcset="./images/main/mikhail354.jpg" media="(min-width: 768px)"/>
+
               <img
                 class="team__img"
-                src="./images/main/mikhail.jpg"
+                src="./images/main/mikhail270.jpg"
                 
                 alt="Михаил Ермаков"
               />
+            </picture>
               <div class="team__bottom">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
               <p class="team__descr">UI Designer</p>
