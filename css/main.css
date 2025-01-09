@@ -371,7 +371,6 @@ img {
 }
 
 .form {
-  width: 448px;
   margin: 0 auto;
 }
 
@@ -381,7 +380,7 @@ img {
 }
 
 .form__input {
-  display: block;
+  display: flex;
   margin-bottom: 28px;
   width: 370px;
   height: 40px;
@@ -482,6 +481,7 @@ img {
 .field-agreement {
   display: flex;
   align-items: center;
+  min-width: 371px;
   margin-bottom: 30px;
 }
 
